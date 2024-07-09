@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/sn.jpg" type="image/jpeg">
+  <title>SnA Shipping Labels</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/sn.jpg" alt="Logo" class="logo-img">
+        SnA Shipping Labels
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="Navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#usage">Usage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="mid">
+      <div class="writeup text-center">
+        <h2 class="text-light display-4 font-weight-bold">Get Your Shipping Labels Now</h2>
+        <p class="text-light mx-auto">Track your parcels efficiently with our premium shipping labels.</p>
+        <a class="text-dark" href="#">Track Your Labels</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about py-5" id="about">
+    <div class="row align-items-center container my-5 mx-auto">
+      <div class="text col-lg-6 col-md-6 col-12 pt-5 pb-5">
+        <h6>OUR PRODUCTS</h6>
+        <h2>High-Quality Shipping Labels</h2>
+        <p>Our shipping labels are crafted with top-grade materials to ensure reliability and performance. Experience
+          excellence in every label.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="image col-lg-6 col-md-6 col-12 pt-5 pb-5">
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features py-5">
+    <div class="row align-items-center container my-5 mx-auto">
+      <div class="image col-lg-6 col-md-6 col-12 pt-5 pb-5">
+        <img class="img-fluid" src="images/usps.png" alt="USPS">
+      </div>
+      <div class="text col-lg-6 col-md-6 col-12 pt-5 pb-5">
+        <h6>FEATURES</h6>
+        <h2>Smart Solutions for Smooth Shipping</h2>
+        <p>Our shipping labels come with advanced tracking features and innovative designs, ensuring seamless parcel
+          management for your business.</p>
+        <a href="#">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" class="usage py-5">
+    <div class="heading text-center pt-5 pb-5">
+      <h2 class="font-weight-bold pb-5 text-light">Usage Instructions</h2>
+    </div>
+    <div class="row mx-auto justify-content-center align-items-center text-center container">
+      <div class="card col-lg-3 col-md-8 col-12 m-2">
+        <h5 class="font-weight-bold">Step 1: Order</h5>
+        <p>Place your order for shipping labels and ensure all details are accurate.</p>
+      </div>
+      <div class="card col-lg-3 col-md-8 col-12 m-2">
+        <h5>Step 2: Print</h5>
+        <p>Print the labels using high-quality printers for optimal clarity.</p>
+      </div>
+      <div class="card col-lg-3 col-md-8 col-12 m-2">
+        <h5>Step 3: Apply</h5>
+        <p>Affix the labels securely to your parcels before shipping them out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact py-5">
+    <div class="row align-items-center container my-5 mx-auto">
+      <div class="text col-lg-6 col-md-6 col-12 pt-5 pb-5">
+        <h6>CONTACT US</h6>
+        <h2>We're Here to Assist</h2>
+        <p>For any queries or assistance, feel free to reach out to our customer service team. We're dedicated to
+          ensuring your shipping experience is smooth.</p>
+        <a href="#">Contact Now</a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 pt-5 pb-5">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer font-small stylish-color-dark pt-4 bg-dark text-light">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-light">SnA Shipping Labels</h5>
+          <p class="text-light">Experience seamless parcel management with our premium shipping labels.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2024 SnA Shipping Labels. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXlQ205lb8a8RoGA6eKl0PLPjM5zO6d8RvtVJBLtx9FfYvhZ9FABewt7P4Rs"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eylH6ZlwYZ/nGOloQHf2LlAGxuLrIx02Lw/wS0XWdImY1pBcCsfzvYz"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $('#contactForm').on('submit', function(event) {
+      event.preventDefault();
+
+      const contactData = {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        subject: $('#subject').val(),
+        message: $('#message').val()
+      };
+
+      $.ajax({
+        type: 'POST',
+        url: '/contact',
+        data: JSON.stringify(contactData),
+        contentType: 'application/json',
+        success: function(response) {
+          alert(response);
+          $('#contactForm')[0].reset();
+        },
+        error: function(error) {
+          alert('Error: ' + error.responseText);
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

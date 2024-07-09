@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/sn.jpg" type="image/jpg">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/sn.jpg" alt="Logo" class="logo-img">
+        SnA Shipping Labels
+      </a>
+    </nav>
+  </header>
+
+  <section class="signup py-5 mt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Sign Up</h2>
+          <!-- changed -->
+          <form action="/signup" method="POST">
+            <!-- changed -->
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+          <!-- changed -->
+          <p class="text-center mt-3">Already have an account? <a href="/signin">Sign In</a></p>
+          <!-- changed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer font-small stylish-color-dark pt-4 bg-dark text-light">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-light">
+            SnA Shipping Labels
+          </h5>
+          <p class="text-light">
+            Experience seamless parcel management with our premium shipping labels.
+          </p>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#usage">Usage</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">FAQs</a>
+            </li>
+            <li>
+              <a href="#!">Help Center</a>
+            </li>
+            <li>
+              <a href="#!">Warranty</a>
+            </li>
+            <li>
+              <a href="#!">Returns</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none" />
+        <div class="col-md-2 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Facebook</a>
+            </li>
+            <li>
+              <a href="#!">Twitter</a>
+            </li>
+            <li>
+              <a href="#!">Instagram</a>
+            </li>
+            <li>
+              <a href="#!">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2024 SnA Shipping Labels. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>
